@@ -1,0 +1,22 @@
+name: 'Dispatch Action'
+description: 'dispatches action to some other repo'
+inputs:
+  target:
+    description: 'repo to dispatch action on'
+    required: true
+    default: null
+  event_type:
+    description: 'event to dispatch'
+    required: false
+    default: 'custom_event'
+  client_payload:
+    description: 'custom payload'
+    required: false
+    default: null
+  token:
+    description: 'auth token'
+    required: false
+    default: null
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
