@@ -1,12 +1,12 @@
-name: 'Dispatch Action'
-description: 'dispatches action to target repo'
+name: 'Dispatch Event'
+description: 'dispatches event to target repo'
 inputs:
   target:
-    description: 'repo to dispatch action'
+    description: 'repo to dispatch event'
     required: true
     default: null
   event_type:
-    description: 'event type to dispatch'
+    description: 'event to dispatch'
     required: false
     default: 'custom_event'
   client_payload:
